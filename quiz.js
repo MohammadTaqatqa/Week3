@@ -39,9 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
       btn.dataset.index = index;
 
       btn.addEventListener("click", () => {
-        // إزالة التحديد من باقي الأزرار
         document.querySelectorAll(".answer-btn").forEach(b => b.classList.remove("selected"));
-        // تحديد الزر المضغوط
         btn.classList.add("selected");
       });
 
@@ -83,6 +81,5 @@ document.addEventListener("DOMContentLoaded", function () {
     loadQuestion();
   });
 
-  // بدء الاختبار أول مرة
   loadQuestion();
 });

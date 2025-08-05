@@ -37,9 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // ============================
-  // ES6 Array Methods Practice
-  // ============================
+  
   console.log("=== Array Methods Practice ===");
 
   const users = [
@@ -49,22 +47,17 @@ document.addEventListener("DOMContentLoaded", function () {
     { id: 4, name: "ali", age: 15 },
   ];
 
-  // 1. map
   const userNames = users.map(user => user.name);
   console.log("User Names:", userNames);
 
-  // 2. filter
   const adults = users.filter(user => user.age >= 18);
   console.log("Adults:", adults);
 
-  // 3. reduce
   const totalAge = users.reduce((sum, user) => sum + user.age, 0);
   console.log("Total Age:", totalAge);
 
-  // 4. find
   const minorUser = users.find(user => user.age < 18);
   console.log("First Minor User:", minorUser);
 
-  // 5. forEach
   users.forEach(user => console.log("User:", user.name, "Age:", user.age));
 });
