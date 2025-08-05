@@ -1,0 +1,145 @@
+/* الخطوط والتنسيق العام */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #00bcd4;
+  margin: 0;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* مربعات خلف النصوص */
+.container {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 500px;
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.2);
+}
+
+h1, h2 {
+  color: #00bcd4;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 188, 212, 0.6); /* ظل خلف النص */
+}
+
+/* الحقول والأزرار */
+input, button {
+  padding: 12px 16px;
+  font-size: 16px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+input {
+  width: 60%;
+  background-color: #2c2c2c;
+  color: #ffffff;
+  border: 1px solid #00bcd4;
+}
+
+button {
+  background-color: #00bcd4;
+  color: #121212;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0097a7;
+}
+
+/* To-Do List */
+#taskList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#taskList li {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  padding: 12px 16px;
+  margin: 10px auto;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* أزرار الحذف داخل المهام */
+#taskList li button {
+  background-color: #e91e63;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-left: 12px;
+}
+
+#taskList li button:hover {
+  background-color: #c2185b;
+}
+
+/* Quiz App */
+#quiz-container, #result {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.2);
+}
+
+/* أزرار الإجابة بشكل عصري */
+#answers {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.answer-btn {
+  background: linear-gradient(145deg, #1a1a1a, #202020);
+  color: #00bcd4;
+  border: 2px solid #00bcd4;
+  padding: 16px 24px;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 12px rgba(0, 188, 212, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.answer-btn:hover {
+  background: #263238;
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.5);
+  transform: scale(1.02);
+}
+
+.answer-btn:active {
+  transform: scale(0.98);
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.3) inset;
+}
+
+.answer-btn.selected {
+  background-color: #007ACC; /* أزرق كامل */
+  color: #ffffff;            /* خط أسود */
+  border-color: #cc0000;
+  box-shadow: 0 0 15px rgba(211, 7, 7, 0.7);
+}
+
+
